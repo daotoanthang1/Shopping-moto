@@ -1,0 +1,49 @@
+.search-sign-in-register {
+    position: relative;
+    display: flex;
+    width: 90%;
+    left: 12%;
+    margin-top: 17px;
+    top: 0%;
+
+    input[type="text"] {
+        width: 700px;
+        height: 40px;
+        position: absolute;
+        top: 0%;
+        padding-left: 45px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    i.fa.fa-search {
+        position: absolute;
+        top: 0%;
+        left: 1%;
+        font-size: 24px;
+        padding-top: 7px;
+    }
+
+    .cart-icon {
+        cursor: pointer;
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        left: 72%;
+        margin-top: 3%;
+
+        i.fa.fa-shopping-cart {
+            font-size: 35px;
+            position: absolute;
+            right: -20%;
+            top: -80%;
+        }
+
+        #count-products {
+            position: absolute;
+            right: -40%;
+            top: -105%;
+        }
+    }
+}
+

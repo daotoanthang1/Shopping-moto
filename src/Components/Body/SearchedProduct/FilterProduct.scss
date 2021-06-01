@@ -1,0 +1,110 @@
+.searched-product {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    cursor: pointer;
+    text-align: center;
+    h1 {
+        font-size: 33px;
+        margin-top: 2%;
+    }
+    hr {
+        width: 280px;
+    }
+    .filter {
+        position: absolute;
+        left: 5%;
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
+        .price-search {
+            position: relative;
+            height: 130px;
+            h3 {
+                position: absolute;
+                left: 13%;
+                font-size: 18px;
+            }
+            input[type="number"] {
+                width: 119px;
+                margin-top: 10%;
+            }
+            button.btn.btn-warning {
+                position: absolute;
+                top: 63%;
+                left: 13%;
+                width: 73%;
+            }
+        }
+        .star-search{
+            position: relative;
+            height: 160px;
+            h3 {
+                position: absolute;
+                left: 13%;
+                font-size: 18px;
+            }
+            ul#star {
+                list-style: none;
+                position: absolute;
+                top: 13%;
+                left: 2%;
+                li{
+                    .distance-star {
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+        .brand-search{
+            position: relative;
+            height: 160px;
+            h3 {
+                position: absolute;
+                left: 13%;
+                font-size: 18px;
+            }
+            ul#brand {
+                list-style: none;
+                position: absolute;
+                text-align: justify;
+                top: 15%;
+                left: 2%;
+                font-size: 16px;
+                font-weight: 500;
+                color: #ff9900;
+                cursor: pointer;
+                li{
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+    .searched-product-list{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 25%;
+        top: 5%;
+        .title-search {
+            position: absolute;
+            left: 15%;
+            margin-top: 34px;
+            display: flex;
+            width: 50%;
+            form{
+                margin-left: 10%;
+                margin-top: 0;
+            }
+            
+        }
+        .list-product-search {
+            position: absolute;
+            top: 10%;
+        }
+    }
+}
+.detail-product{
+    max-width: 1500px;
+}

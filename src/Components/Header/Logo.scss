@@ -1,0 +1,47 @@
+    .header-motor {
+        max-width: 100%;
+        height: 106px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: whitesmoke;
+
+        .logo {
+            position: relative;
+            left: 9%;
+            width: 200px;
+            height: 200px;
+        }
+
+        #text-logo {
+            font-size: 47px;
+            font-weight: 600;
+            color: black;
+            height: 100px;
+            padding-top: 14px;
+            position: absolute;
+            padding-left: 46%;
+            padding-right: 1%;
+            font-family: emoji;
+        }
+
+        #logo-icon {
+            svg {
+                width: 70px;
+                height: 90px;
+                position: absolute;
+                left: 9%;
+            }
+        }
+    }
+
+.hidden-blank {
+        position: absolute;
+        width: 100%;
+        height: 4%;
+        background: #f5f5f5;
+        top: 16.9%;
+}
+.App{
+    position: relative;
+}

@@ -1,0 +1,123 @@
+.wrapperStoreSystem h2{
+    font-size: 26px;
+    font-weight: bold;
+    color: #32323d;
+    margin: 0;
+    padding: 23px 26px;
+    font-family: var(--fontFamily);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.wrapperStoreSystem {
+    width: 1200px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+.wrapperStoreSystem .storeSystem {
+    width: 1200px;
+    height: 265px;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 24%;
+}
+.wrapperStoreSystem .storeSystem {
+    width: 1200px;
+    height: 265px;
+    display: flex;
+    margin: auto;
+}
+.wrapperStoreSystem .storeSystem .storeSystemItem {
+    width: 290px;
+    height: 263px;
+    overflow: hidden;
+    margin-right: -10px;
+}
+.wrapperStoreSystem .storeSystem .storeItem {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+}
+.wrapperStoreSystem .storeSystem .storeItem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.wrapperStoreSystem .storeSystem .storeItem p {
+    margin: 0;
+    font-size: 23px;
+    font-weight: bold;
+    color: #3b8c3beb;
+    text-align: center;
+    padding-top: 12px;
+    font-family: var(--fontFamily);
+}
+.wrapperStoreSystem .storeSystem .storeItem:after {
+    position: absolute;
+    content: '';
+    top: -200px;
+    left: 0;
+    background: #00000036;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.4s;
+    opacity: 0; 
+    visibility: hidden;
+}
+.wrapperStoreSystem .storeSystem .storeItem a {
+    position: absolute;
+    top: 89px;
+    width: 240px;
+    left: -140px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 17px;
+    transition: 2s;
+    font-family: var(--fontFamily);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.wrapperStoreSystem .storeSystem .storeItem a:before{
+    position: absolute;
+    content: '\f041';
+    font: normal normal normal 14px/1 FontAwesome;
+    top: -60px;
+    left: 104px;
+    color: white;
+    font-size: 43px;
+}
+.wrapperStoreSystem .storeSystem .storeItem:hover:after {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.wrapperStoreSystem .storeSystem .storeItem:hover a {
+    left: 15px;
+    opacity: 1;
+    visibility: visible;
+}
+h3.title-product {
+    color: white;
+    width: 400px;
+    height: 35px;
+    background-color: #086d98;
+    position: absolute;
+    text-align: center;
+}
+h3.title-product::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-color: rgba(8, 109, 152, 0.5) transparent rgba(8, 109, 152, 0.5) #086d98;
+    border-style: solid;
+    border-width: 17.5px 10px;
+    left: 100%;
+}

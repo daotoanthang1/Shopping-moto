@@ -1,0 +1,26 @@
+.contact-icon {
+    height: 74px;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    color: white;
+    p{
+        display: inline;
+    }
+    .contact-icon-item {
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 12px;
+        transition: 0.2s;
+        cursor: pointer;
+        transition: 1s;
+        padding-top: 3px;
+        text-align: center;
+    }
+}
+.contact-icon-item:hover{
+    color: black;
+    background-color: white;
+}

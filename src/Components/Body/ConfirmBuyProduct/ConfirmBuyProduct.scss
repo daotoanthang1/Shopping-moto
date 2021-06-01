@@ -1,0 +1,135 @@
+#header-title-product {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 5%;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 7px;
+    padding-top: 15px;
+    margin-bottom: 3%;
+    p {
+        position: absolute;
+        left: 10%;
+    }
+
+    ul {
+        position: absolute;
+        display: flex;
+        list-style: none;
+        width: 57%;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 31%;
+    }
+}
+
+.product-prepare-to-purchase {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border: 1px gray solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 60px;
+
+    input[type="checkbox"] {
+        position: absolute;
+        float: left;
+        left: 3%;
+        top: 43%;
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .col-4 {
+        position: absolute;
+        left: 6%;
+        top: 12%;
+
+        img {
+            width: 150px;
+            height: 150px;
+            display: inline;
+            float: left;
+        }
+
+        h3 {
+            display: inline;
+            position: absolute;
+            left: 50%;
+            font-weight: 400;
+            font-family: math;
+            text-align: initial;
+            width: 150px;
+            font-size: 17px;
+        }
+    }
+
+    .col-8 {
+        width: 100%;
+        height: 100%;
+        top: 12%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 44%;
+            flex-direction: revert;
+            justify-content: space-around;
+            width: 105%;
+            top: 28%;
+
+            li.delete-product {
+                color: orange;
+                cursor: pointer;
+            }
+            input[type="number"] {
+                margin-bottom: 10%;
+                width: 60px;
+                padding-left: 3%;
+            }
+            select#cars {
+                width: 70px;
+                height: 30px;
+            }
+        }
+
+    }
+}
+
+hr.confirm-product {
+    margin-top: 5%;
+}
+
+
+//Other situation:
+div#no-product {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    h1 {
+        position: absolute;
+        left: 26%;
+        top: 30%;
+    }
+    h3{
+        position: absolute;
+        top: 45%;
+        left: 38%;
+        color: #086d98;
+    }
+}
+
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: #ff852f;
+}

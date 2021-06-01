@@ -1,0 +1,169 @@
+.nav-lists {
+    font-size: 20px;
+    position: relative;
+    left: 6%;
+
+    ul.nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        li.sign-in-register {
+            font-size: 14px;
+            margin-left: 40px !important;
+            margin-top: 0.5%;
+            text-transform: initial;
+        }
+
+        hr {
+            width: 2px;
+            height: 15px;
+            background-color: black;
+            position: absolute;
+            right: 25%;
+            top: -30%;
+        }
+
+        li {
+            margin-left: 68px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        li:hover::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: black;
+            left: 1px;
+            top: 27px;
+            animation-name: underlinenav;
+            animation-duration: 0.5s;
+        }
+
+        @keyframes underlinenav {
+            0% {
+                transform: translateX(-100%)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    }
+}
+
+.nav-lists ul.nav .active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    left: 1px;
+    top: 27px;
+    animation-name: underlinenav;
+    animation-duration: 0.5s;
+}
+.non-active{
+    position: absolute;
+}
+@keyframes underlinenav {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .nav-lists {
+        margin-left: 8%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+ul.nav li.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    left: 1px;
+    top: 27px;
+    animation-name: underlinenav;
+    animation-duration: 0.5s;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+div#dropdown-log-out {
+    position: absolute;
+    left: 66%;
+    top: 0;
+    height: 50px;
+}
+
+.username {
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    left: 65%;
+    top: 0%;
+    display: contents;
+}
+
+ul.sign-out {
+    width: 190px;
+    background: white;
+    position: absolute;
+    left: 5%;
+    list-style: none;
+    float: left;
+    padding-left: 25px;
+    text-align-last: start;
+    top: 35px;
+    font-size: 17px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#dropdown-log-out:hover ul.sign-out,
+#dropdown-log-out:hover i.fa.fa-caret-up {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.sign-out li:hover {
+    color: #007bff;
+}
+
+i.fa.fa-caret-up {
+    position: absolute;
+    color: white;
+    top: 22px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    left: 82%;
+}

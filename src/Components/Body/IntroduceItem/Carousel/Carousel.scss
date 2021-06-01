@@ -1,0 +1,138 @@
+.carousel-box {
+  height: 449px;
+  width: 800px;
+  border: 1px gray solid;
+  border-radius: 5px;
+  position: absolute;
+  left: 29.3%;
+  overflow: hidden;
+}
+
+.carousel-item .carousel-img {
+  width: 800px;
+  height: 448px;
+  border-radius: 5px;
+}
+
+.carousel-item h3 {
+  color: white;
+  font-weight: 700;
+  animation-duration: 1s;
+  animation-name: movetextcarousel;
+  overflow: hidden;
+  position: absolute;
+  left: 65%;
+  top: -80%;
+  animation: h3-animation 1.5s;
+}
+
+@keyframes movetextcarousel {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.carousel-item {
+  transition: 1s;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+}
+.carousel-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+.text-product-carousel{
+  position: relative;
+  color: white;
+  width: 300px;
+  height: 115px;
+  left: -51%;
+  h5 {
+    position: absolute;
+    left: 67%;
+    font-size: 15px;
+    top: -45%;
+    animation: h5-animation 2s;
+}
+}
+.text-product-carousel p{
+  position: absolute;
+  width: 188px;
+  text-align: initial;
+  left: 67%;
+  font-size: 13px;
+  top: -25%;
+  animation: p-animation 2.5s;
+}  
+.about-brand {
+  position: relative;
+
+  .themes-products {
+    position: absolute !important;
+    width: 400px !important;
+    bottom:-69% !important;
+    height: 400px !important;
+    animation:themes-products-animation 1s ;
+    animation-timing-function: linear;
+  }
+  .themes-product {
+    position: absolute !important;
+    width: 500px !important;
+    bottom:-69% !important;
+    height: 500px !important;
+    animation: themes-product-animation 0.7s;
+    animation-timing-function:linear;
+    
+  }
+  @keyframes themes-product-animation {
+    0%{
+      transform: translateX(-50%);
+    }  
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @keyframes themes-products-animation {
+    0%{
+      transform: translateX(-50%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  @keyframes h5-animation {
+    0%{
+      transform: translateX(-72%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  @keyframes h3-animation {
+    0%{
+      transform: translateX(-70%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  @keyframes p-animation {
+    0%{
+      transform: translateX(-72%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+}
+li.toolbar-carousel {
+  width: 15px;
+  height: 15px;
+  border: 1px gray solid;
+  border-radius: 25px;
+}

@@ -1,0 +1,208 @@
+.VR-KING-share {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    left: -4%;
+}
+
+.VR-KING-share hr {
+    width: 4px;
+    height: 29px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+
+.VR-KING-share h3 {
+    display: inline;
+    margin-left: 12px;
+    margin-top: 15px;
+    left: 3%;
+    top: -10%;
+}
+
+.VR-KING-share .row .col-4 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-VR {
+    width: 25%;
+    height: 35px;
+    background: rgb(8, 109, 152);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 0;
+    position: relative;
+    display: inline-block;
+    font-family: none;
+}
+
+.title-VR-and-see-items a {
+    text-decoration: none;
+    font-family: none;
+}
+
+.title-VR-famous {
+    width: 35%;
+    height: 35px;
+    background: rgb(8, 109, 152);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 0;
+    position: relative;
+    display: inline-block;
+    font-family: none;
+
+}
+
+.title-VR-famous::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-color: rgba(8, 109, 152, .5) transparent rgba(8, 109, 152, .5) #086d98;
+    border-style: solid;
+    border-width: 17.5px 10px;
+}
+
+.title-VR-and-see-items p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    display: inline;
+    margin-left: 57%;
+    color: rgb(8, 109, 152)
+}
+
+.title-VR-and-see-items p {
+    position: absolute;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex .row ul {
+    list-style: none;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.flex .row {
+    width: 380px;
+    margin-left: 3px;
+    height: 140px;
+}
+
+.flex .row .arrange-box-share-new ul li.VR-KING-main-news::after {
+    content: "";
+    width: 101%;
+    height: 120%;
+    background: black;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    opacity: 0.4;
+    display: flex;
+    left: -1%;
+}
+
+.flex .row ul li {
+    cursor: pointer;
+}
+
+.VR-KING-main-news {
+    overflow: hidden;
+}
+
+.VR-KING-main-news img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 250px;
+}
+
+.VR-KING-main-news h4 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    width: 330px;
+    margin-left: 10px;
+    z-index: 1;
+    text-align: initial;
+}
+
+.VR-KING-main-news:hover h4 {
+    visibility: visible;
+    opacity: 1;
+    top: 60%;
+}
+
+.flex .row ul li.VR-KING-main-news::after {
+    content: "";
+    width: 325px;
+    height: 120%;
+    background: black;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    opacity: 0.4;
+    display: flex;
+
+}
+
+.VR-KING-main-news {
+    position: relative;
+}
+
+.VR-KING-detail-news {
+    cursor: pointer;
+}
+
+.VR-KING-detail-news img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+li.VR-KING-detail-news p {
+    color: black;
+
+}
+
+li.VR-KING-detail-news .row:hover .col-5 img {
+    opacity: 0.8;
+}
+
+li.VR-KING-detail-news p {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: initial;
+    padding-top: 13%;
+    text-align: initial;
+}
+
+.small-news {
+    position: inherit;
+}
+
+.small-news-texts {
+    position: inherit;
+}

@@ -1,0 +1,36 @@
+#loading-page{
+    text-align: center;
+}
+svg#Layer_1 {
+    padding-top: 12%;
+    margin-left: 0%;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15%;
+    text-align: center;
+}
+#loading-page svg path{
+    fill: transparent;
+    stroke: black;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: animate-loading 2s linear forwards;
+}
+@keyframes animate-loading{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 250;
+    }
+    80%{
+        stroke-dashoffset: 500;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 500;
+        fill: black;
+    }
+}
+
+

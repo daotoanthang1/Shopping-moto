@@ -1,0 +1,47 @@
+.intro-item {
+    position: relative;
+    height: 500px;
+    left: -1.5%;
+    margin-top: 65px;
+    #welcome-to-moto{
+        width: 79%;
+        animation: welcomeMoto 2s;
+        position: relative;
+        left: 8%;
+        height: 0px;
+        top: -19%;
+        h1{
+            position: absolute;
+            top: -20%;
+            color: #0000ff9e;
+            left: 1%;
+        }
+        
+        svg {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: -5%;
+            top: -20%;
+        }
+    }
+}
+@keyframes welcomeMoto{
+    0%{
+        transform: scale(0.001);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.col-5 {
+    position: absolute;
+    left: -26%;
+    z-index: 1;
+}
+
+.col-7 {
+    position: absolute;
+    left: 13%;
+}
+
